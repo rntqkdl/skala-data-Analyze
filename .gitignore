@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL support
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Project outputs & heavy files
+output/
+*.joblib
+*.pkl
+*.html
+
