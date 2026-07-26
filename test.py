@@ -23,7 +23,6 @@ a,b = sys.stdin.readline().strip().split()
 a = int(a)
 b = int(b)
 print(a*b)
-"""
 
 # 한 줄에 입력 된 여러 개의 숫자를 공백 기준으로 쪼개서 정수형 리스트에 저장하기. 
 import sys
@@ -33,3 +32,33 @@ print(numbers)
 
 # 응용 해보기 첫 줄에 여러 개의 정수들이 공백으로 구분되어 주어집니다. 이 정수들 중에서 가장 큰 값을 찾아 출력 하는 프로그램을 만드시오.
 print(max(numbers))
+"""
+"""
+# 첫 줄에는 데이터의 개수(N), 둘째 줄에는 N개의 숫자가 공백으로 주어지는 형태 다뤄보기.
+(입력 예시)
+5
+10 20 30 40 50(입력 예시)
+
+
+import sys
+# 1. 데이터의 개수(N) 입력받기
+n = int(sys.stdin.readline())
+
+# 2. 두 번째 줄 : N개의 숫자를 리스트로 한 번에 입력받기
+numbers = list(map(int, sys.stdin.readline().split()))
+
+print(f"입력된 데이터의 개수: {n}")
+print(f"입력된 리스트: {numbers}")
+"""
+"""
+응용 해보기 (미니 실습)
+첫 줄에 정수의 개수 $N$이 주어지고, 둘째 줄에는 $N개의 정수$가 공백으로 주어집니다.
+이 $N개의 정수의 합(Sum)$을 구해서 출력하는 프로그램을 작성해 보세요.
+
+import sys
+n = int(sys.stdin.readline())
+
+numbers = list(map(int, sys.stdin.readline().split()))
+
+print(f"{sum(numbers)}")
+"""
