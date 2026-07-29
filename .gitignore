@@ -1,0 +1,33 @@
+# 가상환경 (Virtual Environments)
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python 캐시 파일 및 컴파일된 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 빌드, 배포 관련 폴더
+build/
+dist/
+*.egg-info/
+
+# IDE 및 에디터 설정 파일
+.idea/
+.vscode/
+*.swp
+
+# macOS 시스템 파일
+.DS_Store
+
+# 프로젝트 실행 결과물 및 로그
+/output/
+*.log
+pipeline.log
+
+# 원본 데이터 파일 (대용량)
+/raw/

@@ -1,0 +1,28 @@
+url: "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data"
+columns:
+  - "age"
+  - "workclass"
+  - "fnlwgt"
+  - "education"
+  - "education-num"
+  - "marital-status"
+  - "occupation"
+  - "relationship"
+  - "race"
+  - "sex"
+  - "capital-gain"
+  - "capital-loss"
+  - "hours-per-week"
+  - "native-country"
+  - "income"
+output_dir: "output"
+model_path: "output/adult_income_pipeline.joblib"
+plotly_path: "output/plotly_income_distribution.html"
+seaborn_path: "output/seaborn_static_charts.png"
+report_path: "output/report.md"
+
+# 머신러닝 하이퍼파라미터 설정
+ml_params:
+  n_estimators: 100
+  random_state: 42
+  test_size: 0.2

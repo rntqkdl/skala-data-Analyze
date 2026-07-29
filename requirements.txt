@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+scikit-learn
+polars
+scipy
+PyYAML
+langchain
+langchain-openai
+faiss-cpu
+openpyxl
+pyarrow
