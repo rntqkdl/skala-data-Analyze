@@ -20,20 +20,26 @@ import sys
 
 def main():
     # TODO: sys.stdin.readline()을 사용하여 첫 번째 줄(N)을 입력받으세요.
-    # n = int(...)
+    #n = int(sys.stdin.readline())
+    n = int(5)
     
     # TODO: 두 번째 줄의 N개 정수를 리스트로 입력받으세요.
-    # numbers = list(map(int, ...))
+    #numbers = list(map(int, sys.stdin.readline().split()))
+    numbers = list(map(int, (10, 15, 20, 25, 30))
 
     # TODO: 홀수합(odd_sum)과 짝수합(even_sum)을 계산하세요.
     odd_sum = 0
     even_sum = 0
 
     # 코드 작성 부분
-    pass
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+        else:
+            odd_sum += num
 
     # TODO: 결과를 '홀수합 짝수합' 형식으로 출력하세요.
-    # print(...)
+    print(f"홀수합 : {odd_sum}\n, 짝수합 {even_sum}")
 
 if __name__ == "__main__":
     main()
